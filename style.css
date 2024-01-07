@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
 body {
     margin: 0%;
 }
@@ -12,36 +15,105 @@ body {
     width: 1280px;
     height: 459px;
     flex-shrink: 0;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   gap: 24px; 
+}
+
+.texto h1 {
+    padding: 0px 484px 0px 484px;
+    /* Quatro valores: superior, direito, inferior, esquerdo */
+    width: 300px;
+    color: #FFF;
     text-align: center;
+    font-family: Luckiest Guy;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
-.button{
-    justify-items: center;
-}
-#but1{
-    width: 57px;
-    height: 40px;
-    flex-shrink: 0;
-    border: 1px solid #CCC;
-    border-radius: 0px 30px 30px 0px;
+.texto p {
+    padding: 0px 262px 0px 262px;
+    /* Quatro valores: superior, direito, inferior, esquerdo */
+    width: 757px;
+    color: #FFF;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
-#but1{
-    width: 57px;
-    height: 40px;
+.button {
+    display: inline-block;
+}
+
+#but1 {
+    border-radius: 28px;
+    background: #FFF;
+    color: #23272A;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 205px;
+    height: 44px;
     flex-shrink: 0;
-    border: 1px solid #CCC;
-    border-radius: 0px 30px 30px 0px;
+}
+
+#but2 {
+    border-radius: 28px;
+    background: #23272A;
+    width: 281px;
+    height: 44px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 #container-02 {
-    background-color: blueviolet;
-    flex-direction: row-reverse;
+    display: inline-flex;
     justify-content: center;
-    align-content: center;
     align-items: center;
-    justify-items: center;
+    gap: 16px;
+    padding: 10px 155px 10px 155px;
+    /* Quatro valores: superior, direito, inferior, esquerdo */
+}
 
+.item1 {
+    width: 607px;
+    height: 394px;
+}
+
+.item2 h1 {
+    width: 329px;
+    color: #23272A;
+    font-family: Open Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.item2 p {
+    width: 348px;
+    color: #23272A;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 #container-03 {
