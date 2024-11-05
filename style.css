@@ -19,7 +19,6 @@ body {
       rgba(0, 0, 0, 0.6)
     ),
     url(../../Header\ Background.png);
-  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -138,7 +137,6 @@ p {
 }
 
 .item6 h1 {
-  max-width: 329px;
   color: #23272a;
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
@@ -180,44 +178,51 @@ p {
 @media screen and (min-width: 1024px) {
   .container {
     flex-direction: row;
-    justify-content: space-between;
   }
-
   #container-00 {
     padding: 40px 5%;
   }
   #container-01 {
-    max-width: 50%;
+    justify-content: center;
+  }
+  .texto p {
     text-align: center;
+    max-width: 60%;
   }
   .texto h1 {
     text-align: center;
-    max-width: 90%;
-    font-size: 56px;
+    max-width: 100%;
+    font-size: 56px; 
   }
   .button {
     flex-direction: row;
   }
-  #container-02 {
-    flex-direction: row;
-    padding: 60px 10%;
-    text-align: center; /* Centralizar texto no desktop */
+  #but1,
+  #but2 {
+    width: auto;
   }
+  #container-02,
   #container-03,
-  #container-04,
-  #container-05 {
+  #container-04
+   {
+    display: inline-flex;
     flex-direction: row;
-    padding: 60px 10%;
-    text-align: center; /* Centralizar texto no desktop */
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+  }
+
+  .item2,
+  .item3,
+  .item6 {
+    max-width: 12%;
   }
   .item2 h1,
   .item3 h1,
   .item6 h1 {
-    font-size: 32px;
-    text-align: center; /* Centralizar texto no desktop */
+    font-size: 40px;
   }
   .item7 h1 {
     font-size: 48px;
-    text-align: center; /* Centralizar texto no desktop */
   }
 }
